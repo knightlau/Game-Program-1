@@ -19,17 +19,17 @@
         }
 
         #bubble1 {
-            background-color: blue;
+            background-color: light blue;
             left: 30%;
         }
 
         #bubble2 {
-            background-color: green;
+            background-color: light green;
             left: 60%;
         }
 
         .hovered {
-            background-color: yellow !important;
+            background-color: light yellow !important;
         }
     </style>
 </head>
@@ -59,6 +59,7 @@
         });
 
         bubble1.addEventListener('mouseleave', () => {
+            stopSound(sound1);
             bubble1.classList.remove('hovered');
         });
 
@@ -68,6 +69,7 @@
         });
 
         bubble2.addEventListener('mouseleave', () => {
+            stopSound(sound2);
             bubble2.classList.remove('hovered');
         });
 
